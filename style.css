@@ -104,6 +104,19 @@ body {
   margin: 30px;
 }
 
+#t-rect-s {
+display: flex;
+width: Fixed (70px)px;
+height: Hug (33px)px;
+padding: 5px 14px 5px 14px;
+gap: 10px;
+opacity: 0px;
+position: absolute;
+margin-top: 10px;
+margin-left: 10px;
+
+}
+
 h1 {
   font-weight: bold;
   font-size: 3rem;
