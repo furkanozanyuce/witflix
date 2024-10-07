@@ -92,7 +92,7 @@ body {
   border-radius: 5px 0px 0px 5px;
 }
 
-.t-rect:last-child {
+.t-rect:nth-child(4) {
   border-radius: 0px 5px 5px 0px;
 }
 
