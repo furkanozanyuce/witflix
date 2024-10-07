@@ -3,17 +3,124 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  /* color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primary-red: #E50914;
+  --primary-black: #000000;
+  --primary-white: #FFFFFF;
+
+  --tcolor-white: #FFFFFF;
+  --tcolor-gray1: #8C8C8C;
+  --tcolor-gray2: #757575;
+  --tcolor-gray3: #999999;
+
+}
+.rect {
+  width: 520px;
+  height: 312px;
+  top: 146px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.25px;
+  letter-spacing: -0.005em;
+  text-align: left;
+  border: solid 1px var(--primary-white);
+  display: flex;
+}
+body {
+  background-color: var(--primary-black);
+  font-family: Signika;
+  color: var(--primary-white);
 }
 
-a {
+.colors {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin: 30px;
+}
+
+.color {
+  margin-right: 100px;
+}
+
+.color2 h2 {
+  margin-right: 100px;
+  margin: 30px;
+}
+
+.color .rect {
+  display: flex;
+  align-self: left;
+  padding-left: 20px;
+  align-items: center;
+}
+
+
+.rect-red {
+  border: none;
+}
+
+.t-rect {
+  width: 150px;
+  height: 150px;
+  top: 138px;
+  gap: 0px;
+  border-radius: 0;
+  opacity: 0px;
+  display: flex;
+  color: var(--primary-black);
+}
+
+.t-rect:first-child {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.t-rect:last-child {
+  border-radius: 0px 5px 5px 0px;
+}
+
+
+.t-color .t-rect {
+  display: flex;
+  align-self: left;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  align-items:end;
+  font-weight: bold;
+}
+
+.t-color {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin: 30px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.1;
+  letter-spacing: 0.5%;
+  color: var(--primary-white);
+}
+
+h2 {
+  color: var(--primary-white);
+  top: 74px;
+  gap: 0px;
+  opacity: 0px;
+  margin-bottom: 20px;
+}
+
+/* a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
@@ -93,4 +200,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
