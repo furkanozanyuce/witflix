@@ -208,9 +208,15 @@ h3 {
 
 
 
+.title {
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
 .ds-element-container {
   display: flex;
   gap: 2rem;
+  margin-left: 30px;
 }
 
 .primary-button,
@@ -250,6 +256,12 @@ button {
 .outline-button:hover {
   color: var(--primary-white);
   border: 1px solid var(--tcolor-gray1);
+}
+
+
+
+.squares {
+  
 }
 
 
