@@ -25,6 +25,15 @@
   --acolor-orange: #FFA00A;
   --acolor-green: #5FA53F;
 
+  --secondary-black: #222222;
+
+  --bg-lightest: #ffffff;
+  --bg-black: #000000;
+  --bg-gray: #222222;
+  --bg-light-gray: #303030;
+
+  --border-radius: 0.5rem;
+
 }
 
 .rect {
@@ -118,13 +127,12 @@ body {
   justify-content: flex-end;
 }
 
-.a-rect:has(p) {
-  justify-content: space-between;
+.a-rect2 {
+  border: solid 1px var(--primary-white);
 }
 
-.ds-element-container {
-  display: flex;
-  gap: 2rem;
+.a-rect:has(p) {
+  justify-content: space-between;
 }
 
 .t-rect:first-child {
@@ -187,6 +195,50 @@ body {
   height: 33px;
   letter-spacing: 2px;
   padding: 5px 14px 5px 14px;
+}
+
+.ds-element-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.primary-button,
+button {
+  font-size: 1.2rem;
+  letter-spacing: 0.1%;
+  background-color: var(--primary-white);
+  color: var(--primary-black);
+  border-radius: var(--border-radius);
+  border: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.secondary-button {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: var(--primary-white);
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+  opacity: 0.7;
+}
+
+.outline-button {
+  font-size: 1rem;
+  background-color: transparent;
+  color: var(--bg-light-gray);
+  border: 1px solid var(--bg-light-gray);
+  border-radius: 0;
+}
+
+.outline-button:hover {
+  color: var(--primary-white);
+  border: 1px solid var(--bg-lightest);
 }
 
 
