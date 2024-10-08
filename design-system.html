@@ -20,8 +20,8 @@
         </div>
         <div class="colors">
             <div class="color">
-                <h2>Primary Red</h2>
-                <div class="rect rect-red" style="background-color: var(--primary-red);">Red</div>
+                <h2>Primary Red</h2> <br>
+                <div class="rect" style="background-color: var(--primary-red); border: none;">Red</div>
             </div>
             <div class="color">
                 <h2>Primary Black</h2>
@@ -30,19 +30,27 @@
         </div>
         <div class="color2">
             <h2>Typography Color</h2>
-            <div class="t-color">
-                <div class="t-rect" style="background-color: var(--tcolor-white);">White <br> #120056</div>
-                <div class="t-rect" style="background-color: var(--tcolor-gray1);">#8C8C8C</div>
-                <div class="t-rect" style="background-color: var(--tcolor-gray2);">#757575</div>
-                <div class="t-rect" style="background-color: var(--tcolor-gray3);">#999999</div>
-                <div id="t-rect-s" style="background-color: var(--primary-red);">MAIN</div>
+            <div class="t-rect-container">
+                <div class="t-rect" style="background-color: var(--tcolor-white);">
+                    <p class="ds-main" style="background-color: var(--primary-red);">MAIN</p>
+                    <div>White <br> #120056</div>
+                </div>
+                <div class="t-rect" style="background-color: var(--tcolor-gray1);">
+                    <div>#8C8C8C</div>
+                </div>
+                <div class="t-rect" style="background-color: var(--tcolor-gray2);">
+                    <div>#757575</div>
+                </div>
+                <div class="t-rect" style="background-color: var(--tcolor-gray3);">
+                    <div>#999999</div>
+                </div>
             </div>
         </div>
         <div class="color3">
             <h2>Accent Color</h2>
             <div class="a-rect-container">
                 <div class="a-rect" style="background-color: var(--acolor-blue);">
-                    <p class="ds-main" style="background-color: var(--tcolor-white);">MAIN</p>
+                    <p class="ds-main1" style="background-color: var(--tcolor-white);">MAIN</p>
                     <div>Blue <br> #0071EB</div>
                 </div>
                 <div class="a-rect" style="background-color: var(--acolor-orange);">
@@ -58,7 +66,7 @@
         <div class="color3">
             <h2>Background Color</h2>
             <div class="a-rect-container">
-                <div class="a-rect a-rect2" style="background-color: var(--primary-black);">
+                <div class="a-rect" style="background-color: var(--primary-black); border: solid 1px var(--tcolor-white);">
                     <p class="ds-main" style="background-color: var(--tcolor-white); color: var(--primary-black);">MAIN</p>
                     <div>Black <br> #00000</div>
                 </div>
@@ -67,6 +75,7 @@
                 </div>
             </div>
         </div>
+        <br>
 </body>
 
 </html>
