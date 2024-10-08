@@ -34,6 +34,8 @@
   --bg-gray: #222222;
   --bg-light-gray: #303030;
 
+  --square-gray: #333333;
+
   --border-radius: 0.5rem;
 
 }
@@ -260,8 +262,50 @@ button {
 
 
 
-.squares {
-  
+.squares2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 30px;
+}
+
+.logo-image img {
+  width: 11px;
+  height: 20px;
+}
+
+.squares2:has(.logo-image) {
+  display: flex;
+  align-items: center;
+}
+
+.square-content {
+  width: 200px;
+  height: 150px;
+  display: flex;
+}
+
+.square-content img {
+  display: flex;
+  top: 0px;
+  right: 0px;
+}
+
+.top10 {
+  width: 25px;
+  height: 40px;
+  gap: 0px;
+  border-radius: 0px 2px 0px 0px;
+  opacity: 0px;
+  font-size: smaller;
+  display: flex;
+  justify-content: center;
+}
+
+.recent {
+  display: flex;
+  align-self: center;
+  justify-content: center;
 }
 
 
