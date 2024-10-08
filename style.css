@@ -21,7 +21,12 @@
   --tcolor-gray2: #757575;
   --tcolor-gray3: #999999;
 
+  --acolor-blue: #0071EB;
+  --acolor-orange: #FFA00A;
+  --acolor-green: #5FA53F;
+
 }
+
 .rect {
   width: 520px;
   height: 312px;
@@ -34,6 +39,7 @@
   border: solid 1px var(--primary-white);
   display: flex;
 }
+
 body {
   background-color: var(--primary-black);
   font-family: Signika;
@@ -41,7 +47,6 @@ body {
 }
 
 .h1-rect {
-  width: 1350px;
   height: 80px;
   display: flex;
   padding-left: 40px;
@@ -62,6 +67,22 @@ body {
 .color2 h2 {
   margin-right: 100px;
   margin: 30px;
+}
+
+.color3 h2 {
+  margin-right: 100px;
+  margin: 30px;
+}
+
+.color3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.a-rect-container {
+  display: flex;
+  gap: 10px;
+  margin-left: 30px;
 }
 
 .color .rect {
@@ -88,6 +109,24 @@ body {
   line-height: 1.1;
 }
 
+.a-rect {
+  width: 150px;
+  height: 150px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.a-rect:has(p) {
+  justify-content: space-between;
+}
+
+.ds-element-container {
+  display: flex;
+  gap: 2rem;
+}
+
 .t-rect:first-child {
   border-radius: 5px 0px 0px 5px;
 }
@@ -102,7 +141,7 @@ body {
   align-self: left;
   padding-left: 10px;
   padding-bottom: 15px;
-  align-items:end;
+  align-items: end;
   font-weight: normal;
 }
 
@@ -114,17 +153,42 @@ body {
 }
 
 #t-rect-s {
-display: flex;
-width: Fixed (70px)px;
-height: Hug (33px)px;
-padding: 5px 14px 5px 14px;
-gap: 10px;
-opacity: 0px;
-position: absolute;
-margin-top: 10px;
-margin-left: 10px;
-letter-spacing: 2px;
+  display: flex;
+  width: Fixed (70px)px;
+  height: Hug (33px)px;
+  padding: 5px 14px 5px 14px;
+  gap: 10px;
+  opacity: 0px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+  letter-spacing: 2px;
 }
+
+.ds-main {
+  color: var(--acolor-blue);
+  width: 75px;
+  height: 33px;
+  letter-spacing: 2px;
+  padding: 5px 14px 5px 14px;
+}
+
+.ds-main2 {
+  color: var(--acolor-orange);
+  width: 75px;
+  height: 33px;
+  letter-spacing: 2px;
+  padding: 5px 14px 5px 14px;
+}
+
+.ds-main3 {
+  color: var(--acolor-green);
+  width: 75px;
+  height: 33px;
+  letter-spacing: 2px;
+  padding: 5px 14px 5px 14px;
+}
+
 
 h1 {
   font-weight: bold;
